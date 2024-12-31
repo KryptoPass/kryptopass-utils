@@ -1,0 +1,26 @@
+[package]
+name = "kryptopass-utils"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gabriel Maizo <maizogabriel@gmail.com>"]
+description = "KryptoPass Utilities Library"
+repository = "https://github.com/KryptoPass"
+license = "GPLv3"
+keywords = ["password", "cli", "security", "encryption"]
+categories = ["command-line-utilities", "cryptography"]
+readme = "README.md"
+
+[dependencies.rtoolbox]
+version = "0.0"
+
+[dependencies]
+rand = "0.8.5"
+regex = "1.11.1"
+semver = { version = "1.0.24", features = ["serde"] }
+serde = { version = "1.0.216", features = ["derive"] }
+thiserror = "2.0.9"
+toml = "0.8.19"
+unicode-segmentation = "1.12.0"
+unicode-width = "0.2.0"
+uuid = { version = "1.11.0", features = ["serde", "v4"] }
+winapi = { version = "0.3.9", features = ["consoleapi", "fileapi", "handleapi", "winnt"] }
